@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaGuoDong · 个人作品集</title>
+  <meta name="description" content="程序员个人作品集 - 展示项目、技能与经历" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- 等宽字体，适合程序员风格 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">~/MaGuoDong<span class="cursor">_</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact" class="nav-cta">联系我</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero 首屏 -->
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <p class="hero-greeting">你好，我是</p>
+      <h1 class="hero-name">MaGuoDong</h1>
+      <h2 class="hero-title">
+        我是一名<span class="typed" id="typed"></span><span class="cursor">_</span>
+      </h2>
+      <p class="hero-desc">
+        专注于后端 / 全栈开发，喜欢把复杂问题拆解成优雅的代码。
+        这里记录了我做过的项目和一路的成长。
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-ghost">联系我</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/eric54920" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://theguodong.com" target="_blank" rel="noopener">博客</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓ 下滑</div>
+  </header>
+
+  <!-- 关于 -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="hash">#</span> 关于我</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            我是 <strong>MaGuoDong</strong>，一名有 <strong>5 年</strong>经验的程序员。
+            日常主要用 <strong>Python</strong> 构建服务端与工具，
+            也喜欢折腾前端、AI 和开源项目。
+          </p>
+          <p>
+            我相信「代码是给人看的，顺便能在机器上跑」。热衷写出可维护、
+            可测试的代码，也乐于分享技术笔记。
+          </p>
+          <p>
+            工作之外，我喜欢 <em>骑行 / 摄影</em>。
+          </p>
+        </div>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-num">5</span><span class="fact-label">年经验</span></div>
+          <div class="fact"><span class="fact-num">3</span><span class="fact-label">个完成项目</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="hash">#</span> 技能栈</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Python 开发</h3>
+          <ul>
+            <li>精通 Python，异步 / 多线程 / 多进程 / 协程</li>
+            <li>高并发系统设计、性能优化</li>
+            <li>工程化开发</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Web 框架</h3>
+          <ul>
+            <li>FastAPI / Django / Flask</li>
+            <li>RESTful API 设计</li>
+            <li>后端服务架构、接口开发</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>AI 应用开发</h3>
+          <ul>
+            <li>LangChain / LangGraph</li>
+            <li>DeepSeek、智谱 GLM、阿里百炼</li>
+            <li>Prompt Engineering、结构化 JSON Schema</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Agent Skills</h3>
+          <ul>
+            <li>渐进式披露、声明式能力封装</li>
+            <li>SKILL.md 技能定义与路由设计</li>
+            <li>企业开发规范封装为标准化技能单元</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>数据存储 &amp; 搜索</h3>
+          <ul>
+            <li>MySQL / PostgreSQL / SQLite</li>
+            <li>Redis / MongoDB / ChromaDB</li>
+            <li>Elasticsearch 全文搜索、查询优化</li>
+            <li>索引优化、SQL 性能调优</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>消息 &amp; 异步任务</h3>
+          <ul>
+            <li>Kafka / RabbitMQ / Celery</li>
+            <li>任务调度、异步处理</li>
+            <li>分布式系统开发</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>工程化 &amp; 运维</h3>
+          <ul>
+            <li>Docker / Docker Compose 容器化</li>
+            <li>Linux / Ubuntu 部署、应用发布</li>
+            <li>Git / GitHub / GitLab 版本控制</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>前端 &amp; AI 编程</h3>
+          <ul>
+            <li>HTML / CSS / Tailwind / Bootstrap / Vue</li>
+            <li>Vibe Coding：Claude Code / Codex / Cursor</li>
+            <li>代码生成、重构优化、快速原型</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="hash">#</span> 项目作品</h2>
+      <div class="projects-grid">
+        <!-- 复制这个卡片块来添加更多项目 -->
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-folder">📁</span>
+            <div class="project-links">
+              <a href="#" target="https://github.com/Eric54920/Beatify" rel="noopener" title="源码">GitHub</a>
+            </div>
+          </div>
+          <h3 class="project-name">Beatify 音乐播放器</h3>
+          <p class="project-desc">
+            简洁、原生的桌面音乐播放器，支持本地资料库与 WebDAV 远程源。
+          </p>
+          <ul class="project-tech">
+            <li>Rust</li><li>Tauri</li><li>React</li><li>SQLite</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-folder">📁</span>
+            <div class="project-links">
+              <a href="#" target="https://github.com/Eric54920/Blog" rel="noopener" title="源码">GitHub</a>
+              <a href="#" target="_blank" rel="noopener" title="在线演示">Demo</a>
+            </div>
+          </div>
+          <h3 class="project-name">开源博客系统</h3>
+          <p class="project-desc">
+            这是一个基于Django开发的博客系统，包含前端和后台管理系统，前端使用了Bootstrap 4，样式简洁，风格类似GitHub。
+          </p>
+          <ul class="project-tech">
+            <li>Python</li><li>Django</li><li>Bootstrap</li><li>MySQL</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-folder">📁</span>
+            <div class="project-links">
+              <a href="#" target="https://github.com/Eric54920/Recruitment" rel="noopener" title="源码">GitHub</a>
+            </div>
+          </div>
+          <h3 class="project-name">在线招聘系统（毕设）</h3>
+          <p class="project-desc">
+            这是一个在线招聘平台，是本人的毕业设计作品，请勿抄袭。
+          </p>
+          <ul class="project-tech">
+            <li>Python</li><li>Django</li><li>Vue</li><li>ElementUI</li><li>MySQL</li>
+          </ul>
+        </article>
+
+        <article class="project-card project-more">
+          <a href="https://github.com/eric54920" target="_blank" rel="noopener">
+            <h3>更多项目 →</h3>
+            <p>去我的 GitHub 看看其他作品</p>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="hash">#</span> 联系我</h2>
+      <p class="contact-intro">无论是工作机会、技术交流还是合作项目，都欢迎找我聊聊。</p>
+      <div class="contact-links">
+        <a href="mailto:realmaguodong@outlook.com" class="btn btn-primary">📧 发邮件</a>
+        <a href="https://github.com/eric54920" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      </div>
+      <p class="contact-mail">realmaguodong@outlook.com</p>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>© <span id="year"></span> MaGuoDong · Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
